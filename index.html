@@ -1,104 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Sandeep Mandia - Faculty Profile</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Sandeep Mandia - Faculty Profile</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- HEADER -->
-    <header>
-        <div class="profile">
-            <img src="profile.jpg" alt="Dr. Sandeep Mandia">
-            <h1>Dr. Sandeep Mandia</h1>
-            <p>Professor | Researcher | AI & VLSI Expert</p>
-        </div>
-    </header>
-
-    <!-- MAIN LAYOUT -->
-    <div class="container">
-        <!-- SIDEBAR NAVIGATION -->
-        <nav class="sidebar">
-            <ul>
-                <li class="active" onclick="showTab('education')">Education</li>
-                <li onclick="showTab('experience')">Experience</li>
-                <li onclick="showTab('publications')">Publications</li>
-                <li onclick="showTab('conferences')">Conferences</li>
-                <li onclick="showTab('patents')">Patents</li>
-                <li onclick="showTab('projects')">Projects</li>
-                <li onclick="showTab('memberships')">Memberships</li>
-                <li onclick="showTab('contact')">Contact</li>
-            </ul>
-        </nav>
-
-        <!-- CONTENT AREA -->
-        <main class="content">
-            <section id="education" class="tab-content active">
-                <h2>Education</h2>
-                <ul>
-                    <li><b>Ph.D. in VLSI Design</b> - IIT, 2020</li>
-                    <li><b>M.Tech in ECE</b> - NIT, 2015</li>
-                    <li><b>B.Tech in ECE</b> - ABC University, 2012</li>
-                </ul>
-            </section>
-
-            <section id="experience" class="tab-content">
-                <h2>Experience</h2>
-                <ul>
-                    <li><b>Professor</b> - XYZ University (2020 - Present)</li>
-                    <li><b>Assistant Professor</b> - ABC Institute (2015 - 2020)</li>
-                </ul>
-            </section>
-
-            <section id="publications" class="tab-content">
-                <h2>Publications</h2>
-                <p>IEEE Transactions, JMLR, etc.</p>
-            </section>
-
-            <section id="conferences" class="tab-content">
-                <h2>Conferences</h2>
-                <p>ICCAD, AI for Semiconductors.</p>
-            </section>
-
-            <section id="patents" class="tab-content">
-                <h2>Patents</h2>
-                <p>AI-Based Circuit Design Patent.</p>
-            </section>
-
-            <section id="projects" class="tab-content">
-                <h2>Projects</h2>
-                <p>AI-Based VLSI Chip Optimization.</p>
-            </section>
-
-            <section id="memberships" class="tab-content">
-                <h2>Memberships</h2>
-                <p>IEEE Senior Member, ACM Professional Member.</p>
-            </section>
-
-            <section id="contact" class="tab-content">
-                <h2>Contact</h2>
-                <p>Email: sandeepexample@university.edu</p>
-                <p>Phone: +91-XXXXXXXXXX</p>
-            </section>
-        </main>
+  <header class="header-container">
+    <img src="images/profile.jpg" alt="Dr. Sandeep Mandia" class="profile-pic">
+    <div>
+      <h1>Dr. Sandeep Mandia</h1>
+      <p>Assistant Professor | Specialization: Deep Learning, Computer Vision, and AI for Medical Diagnosis</p>
     </div>
-
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2024 Dr. Sandeep Mandia. All rights reserved.</p>
-    </footer>
-
-    <script>
-        function showTab(tabId) {
-            document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
-            document.querySelectorAll('.sidebar ul li').forEach(tab => tab.classList.remove('active'));
-
-            document.getElementById(tabId).classList.add('active');
-            event.target.classList.add('active');
-        }
-    </script>
-
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="academics.html">Academics</a>
+    <a href="education.html">Education</a>
+    <a href="experience.html">Experience</a>
+    <a href="publications.html">Publications</a>
+    <a href="conferences.html">Conferences</a>
+    <a href="patents.html">Patents</a>
+    <a href="projects.html">Projects</a>
+    <a href="membership.html">Memberships</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="container">
+    <!-- About Section -->
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        Dr. Sandeep Mandia is an Assistant Professor specializing in Deep Learning, Computer Vision, and Artificial Intelligence for Medical Diagnosis. With extensive experience in teaching and research, his work bridges innovative technologies and real-world applications.
+      </p>
+    </section>
+    <!-- Additional sections (Education, Experience, etc.) can be added here or placed on separate pages -->
+  </div>
+  <footer>
+    <p>&copy; 2024 Dr. Sandeep Mandia. All rights reserved.</p>
+  </footer>
 </body>
 </html>
