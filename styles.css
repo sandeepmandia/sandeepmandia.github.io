@@ -2,78 +2,48 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-}
-
-.header-container {
+    min-height: 100vh; /* Ensures the page takes full height */
     display: flex;
-    align-items: center;
-    background-color: #004466;
-    color: white;
-    padding: 20px;
+    flex-direction: column;
 }
 
-.header-container div {
-    display: inline-block;
+.main-content {
+    flex: 1; /* Ensures content expands properly */
+    padding-bottom: 50px; /* Adds space for footer */
 }
 
-.profile-pic {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-right: 20px;
+.tabs { 
+    display: flex; 
+    cursor: pointer; 
+    margin-bottom: 10px; 
 }
 
-nav {
-    background-color: #003355;
-    padding: 10px;
-    text-align: center;
+.tab { 
+    padding: 10px 20px; 
+    border: 1px solid #ddd; 
+    margin-right: 5px; 
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 10px;
-    font-weight: bold;
+.tab.active { 
+    background-color: #007BFF; 
+    color: white; 
 }
 
-nav a:hover {
-    background-color: #002244;
+.tab-content { 
+    display: none; 
+    padding: 15px; 
+    border: 1px solid #ddd; 
 }
 
-.container {
-    padding: 20px;
-    max-width: 1000px;
-    margin: 20px auto;
-    background: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-table, th, td {
-    border: 1px solid #ccc;
-}
-
-th, td {
-    padding: 10px;
-    text-align: left;
-}
-
-th {
-    background-color: #f0f0f0;
+.tab-content.active { 
+    display: block; 
 }
 
 footer {
     text-align: center;
+    background-color: #f8f8f8;
     padding: 10px;
-    background-color: #003355;
-    color: white;
-    position: fixed;
+    position: relative; /* Allows it to stay below content */
     bottom: 0;
     width: 100%;
 }
