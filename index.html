@@ -1,40 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dr. Sandeep Mandia - Faculty Profile</title>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #00539C;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #003f7d;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #fff;
+      padding: 15px 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      background: #002e5c;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .profile-pic {
+      float: right;
+      max-width: 200px;
+      margin: 0 0 20px 20px;
+      border-radius: 50%;
+    }
+    h2 {
+      border-bottom: 2px solid #00539C;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+      color: #00539C;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    ul li {
+      margin-bottom: 15px;
+    }
+    a.doi-link {
+      color: #00539C;
+      text-decoration: none;
+    }
+    a.doi-link:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #003f7d;
+      color: #fff;
+      margin-top: 40px;
+    }
+    .clear {
+      clear: both;
+    }
+  </style>
 </head>
 <body>
-  <header class="header-container">
-    <img src="images/profile.jpg" alt="Dr. Sandeep Mandia" class="profile-pic">
-    <div>
-      <h1>Dr. Sandeep Mandia</h1>
-      <p>Assistant Professor | Specialization: Deep Learning, Computer Vision, and AI for Medical Diagnosis</p>
-    </div>
+  <header>
+    <h1>Dr. Sandeep Mandia</h1>
+    <p>Assistant Professor | Specialization: Deep Learning, Computer Vision, and AI for Medical Diagnosis</p>
   </header>
   <nav>
     <a href="index.html">Home</a>
     <a href="academics.html">Academics</a>
-    <a href="education.html">Education</a>
-    <a href="experience.html">Experience</a>
-    <a href="publications.html">Publications</a>
-    <a href="conferences.html">Conferences</a>
-    <a href="patents.html">Patents</a>
-    <a href="projects.html">Projects</a>
-    <a href="membership.html">Memberships</a>
-    <a href="contact.html">Contact</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#publications">Publications</a>
+    <a href="#conferences">Conferences</a>
+    <a href="#patents">Patents</a>
+    <a href="#projects">Projects</a>
+    <a href="#membership">Memberships</a>
+    <a href="#contact">Contact</a>
   </nav>
   <div class="container">
-    <!-- About Section -->
+    <!-- Profile Picture and About -->
     <section id="about">
+      <img src="images/profile.jpg" alt="Dr. Sandeep Mandia" class="profile-pic">
       <h2>About</h2>
       <p>
         Dr. Sandeep Mandia is an Assistant Professor specializing in Deep Learning, Computer Vision, and Artificial Intelligence for Medical Diagnosis. With extensive experience in teaching and research, his work bridges innovative technologies and real-world applications.
       </p>
+      <div class="clear"></div>
     </section>
-    <!-- Additional sections (Education, Experience, etc.) can be added here or placed on separate pages -->
+
+    <!-- Education Section -->
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li>
+          <strong>Ph.D.</strong> from Malaviya National Institute of Technology Jaipur, India<br>
+          <em>Thesis:</em> “Towards Leveraging Deep Learning and Computer Vision for Student Engagement Analysis”
+        </li>
+        <li>
+          <strong>M. Tech</strong> from National Institute of Technology Silchar, Assam<br>
+          <em>Specialization:</em> Microelectronics and VLSI Design
+        </li>
+        <li>
+          <strong>B. Tech</strong> from Rajasthan Technical University, Rajasthan<br>
+          <em>Specialization:</em> Electronics and Communication Engineering
+        </li>
+      </ul>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <ul>
+        <li>
+          <strong>Assistant Professor</strong><br>
+          Thapar Institute of Engineering and Technology, Patiala, Punjab<br>
+          <em>February 2024 - Present</em><br>
+          Responsibilities include teaching, curriculum development, and research on deep learning and computer vision.
+        </li>
+        <li>
+          <strong>Research Associate</strong><br>
+          Malaviya National Institute of Technology Jaipur, India<br>
+          <em>August 2023 - January 2024</em><br>
+          Conducted research on smart system security analysis.
+        </li>
+        <li>
+          <strong>Junior Research Fellow</strong><br>
+          Malaviya National Institute of Technology Jaipur, India<br>
+          <em>October 2022 - July 2023</em><br>
+          Involved in dataset preparation, annotation, and developing deep learning models for microscopic urinalysis.
+        </li>
+        <li>
+          <strong>Assistant Professor</strong><br>
+          Government Women Engineering College, Ajmer, Rajasthan<br>
+          <em>January 2018 - September 2021</em>
+        </li>
+        <li>
+          <strong>Assistant Professor</strong><br>
+          Jain College of Engineering, Belagavi, Karnataka<br>
+          <em>July 2014 - December 2017</em>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Additional sections (Publications, Conferences, Patents, Projects, Memberships, Contact) remain as in the previous template -->
+    <!-- You can copy them from the previous HTML template if needed -->
+
   </div>
   <footer>
     <p>&copy; 2024 Dr. Sandeep Mandia. All rights reserved.</p>
