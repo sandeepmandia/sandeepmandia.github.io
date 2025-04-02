@@ -1,49 +1,41 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh; /* Ensures the page takes full height */
-    display: flex;
-    flex-direction: column;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Sandeep Mandia - Faculty Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-.main-content {
-    flex: 1; /* Ensures content expands properly */
-    padding-bottom: 50px; /* Adds space for footer */
-}
+    <!-- HEADER -->
+    <header>
+        <div class="profile">
+            <img src="profile.jpg" alt="Dr. Sandeep Mandia">
+            <h1>Dr. Sandeep Mandia</h1>
+            <p>Professor | Researcher | AI & VLSI Expert</p>
+        </div>
+    </header>
 
-.tabs { 
-    display: flex; 
-    cursor: pointer; 
-    margin-bottom: 10px; 
-}
+    <!-- MAIN LAYOUT -->
+    <div class="container">
+        <!-- SIDEBAR NAVIGATION -->
+        <nav class="sidebar">
+            <ul>
+                <li class="active" onclick="showTab('education')">Education</li>
+                <li onclick="showTab('experience')">Experience</li>
+                <li onclick="showTab('publications')">Publications</li>
+                <li onclick="showTab('conferences')">Conferences</li>
+                <li onclick="showTab('patents')">Patents</li>
+                <li onclick="showTab('projects')">Projects</li>
+                <li onclick="showTab('memberships')">Memberships</li>
+                <li onclick="showTab('contact')">Contact</li>
+            </ul>
+        </nav>
 
-.tab { 
-    padding: 10px 20px; 
-    border: 1px solid #ddd; 
-    margin-right: 5px; 
-}
-
-.tab.active { 
-    background-color: #007BFF; 
-    color: white; 
-}
-
-.tab-content { 
-    display: none; 
-    padding: 15px; 
-    border: 1px solid #ddd; 
-}
-
-.tab-content.active { 
-    display: block; 
-}
-
-footer {
-    text-align: center;
-    background-color: #f8f8f8;
-    padding: 10px;
-    position: relative; /* Allows it to stay below content */
-    bottom: 0;
-    width: 100%;
-}
+        <!-- CONTENT AREA -->
+        <main class="content">
+            <section id="education" class="tab-content active">
+                <h2>Education</h2>
+                <ul>
+                    <li><b>Ph.D. in VLSI Design</b> - IIT, 2020</li
